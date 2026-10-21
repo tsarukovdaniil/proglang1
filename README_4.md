@@ -220,17 +220,7 @@ b = a[:] - копирует содержимое первой переменно
 от* **a0** *до* **a99**, *от* **b0** *до* **b99** *и так далее, от* **z0** *до* **z99**. 
 *Присвойте всем переменным различные значения от 1 до 2600.*
 
-**Ответ:**
-```
-import string
 
-for index, letter in enumerate(string.ascii_lowercase):
-    for i in range(100):
-        name = f'{letter}{i}'
-        value = index * 100 + i + 1
-        globals()[name] = value
-
-```
 
 ## Дополнительные задания
 
